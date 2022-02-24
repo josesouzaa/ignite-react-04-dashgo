@@ -1,9 +1,11 @@
 import Head from 'next/head'
+
 import { SubmitHandler, useForm } from 'react-hook-form'
-import { Flex, Button, Stack } from '@chakra-ui/react'
+import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
+
 import { Input } from '../components/Form/Input'
+import { Flex, Button, Stack } from '@chakra-ui/react'
 
 type SignInFormData = {
   email: string
